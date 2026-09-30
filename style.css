@@ -62,8 +62,11 @@ a {
   grid-row: 1 / span 2;
   align-self: start;
   justify-self: end;
+
   width: min(100%, 480px);
-  margin-top: 105px;
+  height: 80vh;
+  margin-top: 10vh;
+
   border-radius: 20px;
   overflow: hidden;
 }
@@ -71,7 +74,8 @@ a {
 .image-placeholder img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 .intro {
@@ -98,13 +102,15 @@ a {
 }
 
 .pathways {
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 3;
+
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-  padding-bottom: 44px;
+  gap: 40px;
+
+  padding: 44px 0 44px 0;
 }
 
 .pathway {
@@ -213,8 +219,11 @@ a {
   .image-placeholder {
     order: 2;
     width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
     margin-top: 64px;
     border-radius: 20px;
+    overflow: hidden;
   }
 
   .intro {
